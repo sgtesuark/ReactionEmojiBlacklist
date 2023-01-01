@@ -2,7 +2,7 @@ import discord
 
 client = discord.Client()
 
-
+# Could lead to a temporary API limitation if the bot has a bad connection and therefore reconnects more often
 @client.event
 async def on_ready():
     print('I have logged in as {0.user}'.format(client))
